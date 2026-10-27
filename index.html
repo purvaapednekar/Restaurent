@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desi Dhaba</title>
+  <link rel="stylesheet" href="./output.css">
+  <link rel="shortcut icon" href="./images/utensils-solid-full.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="h-screen font-poppins">
+  <nav
+    class="top-4 left-0 z-50 flex justify-between items-center bg-gradient-to-l from-red-500 rounded-3xl to-white text-red-700 py-1 px-4 fixed w-full border-4 border-red-500">
+    <div class="flex justify-start items-center" id="left">
+      <!-- <img class="size-15 rounded-full mr-2" src="./images/download.png" alt=""> -->
+
+      <i class="fa-solid fa-utensils text-3xl mr-2"></i>
+      <h1 class="text-3xl font-bold">Desi Dhaba</h1>
+    </div>
+
+    <div id="right">
+      <ul
+        class="flex justify-evenly items-center text-white *:p-4 *:mr-4 *:font-bold *:text-lg *:hover:bg-red-800 *:hover:rounded-4xl *:hover:py-1">
+        <li><a href="#">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div
+    class="text-center bg-[url('./images/hero.jpg')] w-full bg-cover bg-center h-[600px] flex justify-center flex-col items-center mt-2"
+    id="hero">
+    <h1 class="text-7xl font-bold text-shadow-2xs">
+      Taste the Best Of India
+    </h1>
+
+    <p class="text-2xl font-semibold italic mt-5">
+      A place where food fixes your mood
+    </p>
+    <a href="#menu" class="inline-block bg-red-600 text-white p-4 mt-5 w-40
+          font-bold rounded-3xl text-2xl cursor-pointer
+          hover:bg-red-700">
+      Explore
+    </a>
+  </div>
+
+  <div class="h-fit text-center shadow-2xl shadow-black hover:-translate-y-5 duration-75" id="menu">
+    <div class="bg-red-500 mt-2 flex justify-center flex-col rounded-2xl" id="head">
+      <h1 class="text-white font-semibold text-5xl p-4">
+        Our Special Menu</h1>
+      <p class="text-white font-bold italic text-xl p-1 mb-2">Delicious flavours made with love</p>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  justify-items-center px-4 mt-4 gap-x-4 gap-y-6 *:transition-colors " id="cards">
+    <div class="h-full min-h-0 max-h-120 w-full min-w-0 max-w-72 rounded-xl shadow-xl shadow-black transition-transform duration-300 hover:scale-105"
+      id="card1">
+      <img class="h-1/2 w-full rounded-t-xl object-cover" src="./images/Dosa.jpg" alt="">
+      <div class="text-center py-7 px-2 rounded-b-xl bg-white text-red-700" id="info">
+        <h1 class="text-2xl font-bold">Masala Dosa</h1>
+        <p class="text-md italic text-gray-600 whitespace-nowrap overflow-clip">Dosa with sambhar chutney</p>
+        <p class="text-xl font-bold mt-3 text-gray-900">Rs.89/-</p>
+        <button class="bg-red-500 w-40 py-2 mt-3 text-white font-bold rounded-4xl hover:bg-red-700">Add to bag</button>
+      </div>
+    </div>
+
+    <div class="h-full min-h-0 max-h-120 w-full min-w-0 max-w-72 rounded-xl shadow-xl shadow-black transition-transform duration-300 hover:scale-105"
+      id="card1">
+      <img class="h-1/2 w-full rounded-t-xl object-cover" src="./images/alooParatha.jpg" alt="">
+      <div class="text-center rounded-b-xl py-7 px-2 bg-white text-red-700" id="info">
+        <h1 class="text-2xl font-bold">Aloo Paratha</h1>
+        <p class="text-md italic text-gray-600 whitespace-nowrap overflow-clip">Roti with potato and butter</p>
+        <p class="text-xl font-bold mt-3 text-gray-900">Rs.150/-</p>
+        <button class="bg-red-500 w-40 py-2 mt-3 text-white font-bold rounded-4xl hover:bg-red-700">Add to bag</button>
+      </div>
+    </div>
+
+    <div class="h-full min-h-0 max-h-120 w-full min-w-0 max-w-72 rounded-xl shadow-xl shadow-black transition-transform duration-300 hover:scale-105"
+      id="card2">
+      <img class="h-1/2 w-full rounded-t-xl object-cover" src="./images/biryani.jpg" alt="">
+      <div class="text-center rounded-b-xl py-7 px-2 bg-white text-red-700" id="info">
+        <h1 class="text-2xl font-bold">Hydrabadi Biryani</h1>
+        <p class="text-md italic text-gray-600 whitespace-nowrap overflow-clip">Veg Biryani from Hydrabad!</p>
+        <p class="text-xl font-bold mt-3 text-gray-900">Rs.280/-</p>
+        <button class="bg-red-500 w-40 py-2 mt-3 text-white font-bold rounded-4xl hover:bg-red-700">Add to bag</button>
+      </div>
+    </div>
+
+    <div class="h-full min-h-0 max-h-120 w-full min-w-0 max-w-72 rounded-xl shadow-xl shadow-black transition-transform duration-300 hover:scale-105"
+      id="card1">
+      <img class="h-1/2 w-full rounded-t-xl object-cover" src="./images/burger.jpg" alt="">
+      <div class="text-center rounded-b-xl py-7 px-2 bg-white text-red-700" id="info">
+        <h1 class="text-2xl font-bold">Burger</h1>
+        <p class="text-md italic text-gray-600 whitespace-nowrap overflow-clip">Pattie between two big buns</p>
+        <p class="text-xl font-bold mt-3 text-gray-900">Rs.120/-</p>
+        <button class="bg-red-500 w-40 py-2 mt-3 text-white font-bold rounded-4xl hover:bg-red-700">Add to bag</button>
+      </div>
+    </div>
+
+    <div class="h-full min-h-0 max-h-120 w-full min-w-0 max-w-72 rounded-xl shadow-xl shadow-black transition-transform duration-300 hover:scale-105"
+      id="card1">
+      <img class="h-1/2 w-full rounded-t-xl object-cover" src="./images/CholeBhature.jpg" alt="">
+      <div class="text-center rounded-b-xl py-7 px-2 bg-white text-red-700" id="info">
+        <h1 class="text-2xl font-bold">Chole Bhature</h1>
+        <p class="text-md italic text-gray-600 whitespace-nowrap overflow-clip">Chole with 2 big Bhaturas</p>
+        <p class="text-xl font-bold mt-3 text-gray-900">Rs.150/-</p>
+        <button class="bg-red-500 w-40 py-2 mt-3 text-white font-bold rounded-4xl hover:bg-red-700">Add to bag</button>
+      </div>
+    </div>
+
+    <div class="h-full min-h-0 max-h-120 w-full min-w-0 max-w-72 rounded-xl shadow-xl shadow-black transition-transform duration-300 hover:scale-105"
+      id="card1">
+      <img class="h-1/2 w-full rounded-t-xl object-cover" src="./images/cakie.jpg" alt="">
+      <div class="text-center rounded-b-xl py-7 px-2 bg-white text-red-700" id="info">
+        <h1 class="text-2xl font-bold">Chocolate Pastry</h1>
+        <p class="text-md italic text-gray-600 whitespace-nowrap overflow-clip">Chocolate flavoured pastry</p>
+        <p class="text-xl font-bold mt-3 text-gray-900">Rs.100/-</p>
+        <button class="bg-red-500 w-40 py-2 mt-3 text-white font-bold rounded-4xl hover:bg-red-700">Add to bag</button>
+      </div>
+    </div>
+
+    <div class="h-full min-h-0 max-h-120 w-full min-w-0 max-w-72 rounded-xl shadow-xl shadow-black transition-transform duration-300 hover:scale-105"
+      id="card1">
+      <img class="h-1/2 w-full rounded-t-xl object-cover" src="./images/frenchfires.jpg" alt="">
+      <div class="text-center rounded-b-xl py-7 px-2 bg-white text-red-700" id="info">
+        <h1 class="text-2xl font-bold">French fries</h1>
+        <p class="text-md italic text-gray-600 whitespace-nowrap overflow-clip">Fried potato fries with sauce</p>
+        <p class="text-xl font-bold mt-3 text-gray-900">Rs.120/-</p>
+        <button class="bg-red-500 w-40 py-2 mt-3 text-white font-bold rounded-4xl hover:bg-red-700">Add to bag</button>
+      </div>
+    </div>
+
+    <div class="h-full min-h-0 max-h-120 w-full min-w-0 max-w-72 rounded-xl shadow-xl shadow-black transition-transform duration-300 hover:scale-105"
+      id="card1">
+      <img class="h-1/2 w-full rounded-t-xl object-cover" src="./images/garlicbread.jpg" alt="">
+      <div class="text-center rounded-b-xl py-7 px-2 bg-white text-red-700" id="info">
+        <h1 class="text-2xl font-bold">Garlic Bread</h1>
+        <p class="text-md italic text-gray-600 whitespace-nowrap overflow-clip">Bread with garlic and cheese</p>
+        <p class="text-xl font-bold mt-3 text-gray-900">Rs.200/-</p>
+        <button class="bg-red-500 w-40 py-2 mt-3 text-white font-bold rounded-4xl hover:bg-red-700">Add to bag</button>
+      </div>
+    </div>
+
+    <div class="h-full min-h-0 max-h-120 w-full min-w-0 max-w-72 rounded-xl shadow-xl shadow-black transition-transform duration-300 hover:scale-105"
+      id="card1">
+      <img class="h-1/2 w-full rounded-t-xl object-cover" src="./images/gulabJamun.jpg" alt="">
+      <div class="text-center rounded-b-xl py-7 px-2 bg-white text-red-700" id="info">
+        <h1 class="text-2xl font-bold">Gulab Jamun</h1>
+        <p class="text-md italic text-gray-600 whitespace-nowrap overflow-clip">Gulab Jamuns for occasion</p>
+        <p class="text-xl font-bold mt-3 text-gray-900">Rs.180/-</p>
+        <button class="bg-red-500 w-40 py-2 mt-3 text-white font-bold rounded-4xl hover:bg-red-700">Add to bag</button>
+      </div>
+    </div>
+
+    <div class="h-full min-h-0 max-h-120 w-full min-w-0 max-w-72 rounded-xl shadow-xl shadow-black transition-transform duration-300 hover:scale-105"
+      id="card1">
+      <img class="h-1/2 w-full rounded-t-xl object-cover" src="./images//misal.jpg" alt="">
+      <div class="text-center rounded-b-xl py-7 px-2 bg-white text-red-700" id="info">
+        <h1 class="text-2xl font-bold">Misal Pav</h1>
+        <p class="text-md italic text-gray-600 whitespace-nowrap overflow-clip">Do try our Puneri Misal Pav</p>
+        <p class="text-xl font-bold mt-3 text-gray-900">Rs.90/-</p>
+        <button class="bg-red-500 w-40 py-2 mt-3 text-white font-bold rounded-4xl hover:bg-red-700">Add to bag</button>
+      </div>
+    </div>
+
+    <div class="h-full min-h-0 max-h-120 w-full min-w-0 max-w-72 rounded-xl shadow-xl shadow-black transition-transform duration-300 hover:scale-105"
+      id="card1">
+      <img class="h-1/2 w-full rounded-t-xl object-cover" src="./images/momos.jpg" alt="">
+      <div class="text-center rounded-b-xl py-7 px-2 bg-white text-red-700" id="info">
+        <h1 class="text-2xl font-bold">Veg Momos</h1>
+        <p class="text-md italic text-gray-600 whitespace-nowrap overflow-clip">Steamed Veg momos 12 pc</p>
+        <p class="text-xl font-bold mt-3 text-gray-900">Rs.130/-</p>
+        <button class="bg-red-500 w-40 py-2 mt-3 text-white font-bold rounded-4xl hover:bg-red-700">Add to bag</button>
+      </div>
+    </div>
+
+    <div class="h-full min-h-0 max-h-120 w-full min-w-0 max-w-72 rounded-xl shadow-xl shadow-black transition-transform duration-300 hover:scale-105"
+      id="card1">
+      <img class="h-1/2 w-full rounded-t-xl object-cover" src="./images/Nachos.jpg" alt="">
+      <div class="text-center rounded-b-xl py-7 px-2 bg-white text-red-700" id="info">
+        <h1 class="text-2xl font-bold">Nachos</h1>
+        <p class="text-md italic text-gray-600 whitespace-nowrap overflow-clip">Nachos with mayonaisse</p>
+        <p class="text-xl font-bold mt-3 text-gray-900">Rs.200/-</p>
+        <button class="bg-red-500 w-40 py-2 mt-3 text-white font-bold rounded-4xl hover:bg-red-700">Add to bag</button>
+      </div>
+    </div>
+
+    <div class="h-full min-h-0 max-h-120 w-full min-w-0 max-w-72 rounded-xl shadow-xl shadow-black transition-transform duration-300 hover:scale-105"
+      id="card1">
+      <img class="h-1/2 w-full rounded-t-xl object-cover" src="./images/PaniPuri.jpg" alt="">
+      <div class="text-center rounded-b-xl py-7 px-2 bg-white text-red-700" id="info">
+        <h1 class="text-2xl font-bold">Pani Puri</h1>
+        <p class="text-md italic text-gray-600 whitespace-nowrap overflow-clip">Puris with sour water 6pc</p>
+        <p class="text-xl font-bold mt-3 text-gray-900">Rs.50/-</p>
+        <button class="bg-red-500 w-40 py-2 mt-3 text-white font-bold rounded-4xl hover:bg-red-700">Add to bag</button>
+      </div>
+    </div>
+
+    <div class="h-full min-h-0 max-h-120 w-full min-w-0 max-w-72 rounded-xl shadow-xl shadow-black transition-transform duration-300 hover:scale-105"
+      id="card1">
+      <img class="h-1/2 w-full rounded-t-xl object-cover" src="./images/pannerTikka.jpg" alt="">
+      <div class="text-center rounded-b-xl py-7 px-2 bg-white text-red-700" id="info">
+        <h1 class="text-2xl font-bold">Paneer Tikka</h1>
+        <p class="text-md italic text-gray-600 whitespace-nowrap overflow-clip">Tandoori Paneer tikka 3pc</p>
+        <p class="text-xl font-bold mt-3 text-gray-900">Rs.200/-</p>
+        <button class="bg-red-500 w-40 py-2 mt-3 text-white font-bold rounded-4xl hover:bg-red-700">Add to bag</button>
+      </div>
+    </div>
+
+    <div class="h-full min-h-0 max-h-120 w-full min-w-0 max-w-72 rounded-xl shadow-xl shadow-black  transition-transform duration-300 hover:scale-105"
+      id="card1">
+      <img class="h-1/2 w-full rounded-t-xl object-cover" src="./images/pasta.jpg" alt="">
+      <div class="text-center rounded-b-xl py-7 px-2 bg-white text-red-700" id="info">
+        <h1 class="text-2xl font-bold">Pasta</h1>
+        <p class="text-md italic text-gray-600 whitespace-nowrap overflow-clip">White Sauce Cheese Pasta</p>
+        <p class="text-xl font-bold mt-3 text-gray-900">Rs.250/-</p>
+        <button class="bg-red-500 w-40 py-2 mt-3 text-white font-bold rounded-4xl hover:bg-red-700">Add to bag</button>
+      </div>
+    </div>
+
+    <div class="h-full min-h-0 max-h-120 w-full min-w-0 max-w-72 rounded-xl shadow-xl shadow-black transition-transform duration-300 hover:scale-105"
+      id="card1">
+      <img class="h-1/2 w-full rounded-t-xl object-cover" src="./images/Rasmalai.jpg" alt="">
+      <div class="text-center rounded-t-xl py-7 px-2 bg-white text-red-700" id="info">
+        <h1 class="text-2xl font-bold">Rasmalai</h1>
+        <p class="text-md italic text-gray-600 whitespace-nowrap overflow-clip">Enjoy your rasmalai 2pc</p>
+        <p class="text-xl font-bold mt-3 text-gray-900">Rs.120/-</p>
+        <button class="bg-red-500 w-40 py-2 mt-3 text-white font-bold rounded-4xl hover:bg-red-700">Add to bag</button>
+      </div>
+    </div>
+
+    <div class="h-full min-h-0 max-h-120 w-full min-w-0 max-w-72 rounded-xl shadow-xl shadow-black transition-transform duration-300 hover:scale-105"
+      id="card1">
+      <img class="h-1/2 w-full  rounded-t-xl object-cover" src="./images/noodles.jpg" alt="">
+      <div class="text-center rounded-t-xl py-7 px-2 bg-white text-red-700" id="info">
+        <h1 class="text-2xl font-bold">Hakka Noodles</h1>
+        <p class="text-md italic text-gray-600 whitespace-nowrap overflow-clip">Spicy Hakka Noodles</p>
+        <p class="text-xl font-bold mt-3 text-gray-900">Rs.190/-</p>
+        <button class="bg-red-500 w-40 py-2 mt-3 text-white font-bold rounded-4xl hover:bg-red-700">Add to bag</button>
+      </div>
+    </div>
+
+    <div class="h-full min-h-0 max-h-120 w-full min-w-0 max-w-72 rounded-xl shadow-xl shadow-black transition-transform duration-300 hover:scale-105"
+      id="card1">
+      <img class="h-1/2 w-full rounded-t-xl object-cover" src="./images/coffee.jpg" alt="">
+      <div class="text-center rounded-t-xl py-7 px-2 bg-white text-red-700" id="info">
+        <h1 class="text-2xl font-bold">Cold Coffee</h1>
+        <p class="text-md italic text-gray-600 whitespace-nowrap overflow-clip">Cold Coffee with Icecream</p>
+        <p class="text-xl font-bold mt-3 text-gray-900">Rs.120/-</p>
+        <button class="bg-red-500 w-40 py-2 mt-3 text-white font-bold rounded-4xl hover:bg-red-700">Add to bag</button>
+      </div>
+    </div>
+
+    <div class="h-full min-h-0 max-h-120 w-full min-w-0 max-w-72 rounded-xl shadow-xl shadow-black transition-transform duration-300 hover:scale-105"
+      id="card1">
+      <img class="h-1/2 w-full rounded-t-xl object-cover" src="./images/Pizza.jpg" alt="">
+      <div class="text-center rounded-t-xl py-7 px-2 bg-white text-red-700" id="info">
+        <h1 class="text-2xl font-bold">Veg Pizza</h1>
+        <p class="text-md italic text-gray-600 whitespace-nowrap overflow-clip">Veg Pizza with cheese</p>
+        <p class="text-xl font-bold mt-3 text-gray-900">Rs.200/-</p>
+        <button class="bg-red-500 w-40 py-2 mt-3 text-white font-bold rounded-4xl hover:bg-red-700">Add to bag</button>
+      </div>
+    </div>
+
+    <div class="h-full min-h-0 max-h-120 w-full min-w-0 max-w-72 rounded-xl shadow-xl shadow-black transition-transform duration-300 hover:scale-105"
+      id="card1">
+      <img class="h-1/2 w-full rounded-t-xl object-cover" src="./images/idli.jpg" alt="">
+      <div class="text-center rounded-t-xl py-7 px-2 bg-white text-red-700" id="info">
+        <h1 class="text-2xl font-bold">Idli Wada</h1>
+        <p class="text-md italic text-gray-600 whitespace-nowrap overflow-clip">Idli and Medu Wada 4pc</p>
+        <p class="text-xl font-bold mt-3 text-gray-900">Rs.120/-</p>
+        <button class="bg-red-500 w-40 py-2 mt-3 text-white font-bold rounded-4xl hover:bg-red-700">Add to bag</button>
+      </div>
+    </div>
+  </div>
+
+  <section id="about" class="w-11/12 min-w-10/12 max-w-11/12 sm:w-5/6 h-auto min-h-150 max-h-180 mx-auto bg-red-200 mt-10 rounded-2xl">
+    <div class="flex justify-between items-center p-10" id="ver">
+      <div id="ver" class="h-100 w-90 overflow-hidden rounded-2xl">
+        <img class="h-full w-full object-cover" src="./images/food.jpg" alt="">
+      </div>
+
+      <div class="w-180 min-w-50 sm:w-180 ml-10 text-center animate-slide-right" id="ver">
+        <h1 class="text-3xl font-bold tracking-wider">About Us</h1>
+        <p class="text-red-600 font-bold uppercase tracking-widest mb-2">
+          Our Story
+        </p>
+        <p class="text-gray-700 leading-8 mb-4">
+          Welcome to Desi Dhaba, where every meal celebrates the
+          rich flavors and traditions of India.
+        </p>
+        <p class="text-gray-700 leading-8 mb-4"> We bring the authentic taste of India to your plate.
+          From traditional favorites to delicious street food,
+          every dish is prepared with fresh ingredients and love.</p>
+        <a class="inline-block bg-red-600 text-white px-4 py-2 mt-5 w-fit
+          font-bold rounded-3xl text-xl cursor-pointer
+          hover:bg-red-700" href="#menu"> Explore Our Menu</a>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-3 px-10 gap-x-14 " id="num">
+      <p class="text-xl text-red-800">100%</p>
+      <p class="text-xl text-red-800">15+</p>
+      <p class="text-xl text-red-800">Made</p>
+      <p class="text-gray-700">Fresh Ingredients</p>
+      <p class="text-gray-700">Menu Favourites</p>
+      <p class="text-gray-700">With Love</p>
+    </div>
+  </section>
+
+  <footer id="contact" class="w-full h-80 mt-13 bg-red-500 text-white">
+
+    <div class="flex justify-around items-center mb-10 *:cursor-pointer *:mt-10 *:text-lg " id="contact">
+      <div class="*:mt-5 *:hover:underline" id="left">
+        <p> <i class="fa-solid fa-envelope text-xl"></i> desidhaba@gmail.com</p>
+        <p><i class="fa-brands fa-instagram text-xl"></i> @desidhaba</p>
+        <p><i class="fa-brands fa-square-facebook text-xl"></i> @desidhaba</p>
+        <p><i class="fa-solid fa-phone text-xl"></i> 6869272972</p>
+      </div>
+
+      <div class="" id="right">
+        <ul class="*:hover:underline *:mt-5">
+          <li><a href="#">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr>
+    <div>
+      <p class="text-white font-bold text-xl italic text-center mt-2">Made with love 💛💛 | and coffee ☕</p>
+    </div>
+  </footer>
+</body>
+
+</html>
